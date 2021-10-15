@@ -3,8 +3,18 @@ import { StatusBar } from "react-native";
 
 import SplashScreen from 'react-native-splash-screen';
 import codePush from "react-native-code-push";
+import * as Sentry from '@sentry/react-native';
 
 import { Home } from "./src/pages/Home";
+
+const NODE_ENV = process.env['NODE_ENV'];
+const SENTRY_DSN = process.env['SENTRY_DSN'];
+
+if (NODE_ENV !== 'development') {
+  Sentry.init({
+    dsn: SENTRY_DSN,
+  });
+}
 
 function App() {
   useEffect(() => {

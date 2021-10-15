@@ -26,6 +26,7 @@
     "@types/react": "^17.0.15",
     "@types/react-native": "^0.64.12",
     "babel-jest": "^26.6.3",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "detox": "^18.20.3",
     "eslint": "7.14.0",
     "jest": "^27.2.0",
