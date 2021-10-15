@@ -8,6 +8,7 @@
    </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-FFA700">
+  <img alt="Build status" src="https://build.appcenter.ms/v0.1/apps/80d142a1-9d43-4332-b8fc-5735cbb317b3/branches/main/badge" />
 </p>
 
 > <b>My Skills</b> é o primeiro projeto criado no chapter 1 da trilha de React Native do Ignite da [Rocketseat](https://github.com/Rocketseat). O projeto tem como objetivo demonstrar a construção básica, do zero, de um projeto em React Native usando a CLI e como migrar um projeto como esse para Typescript de forma incremental.
