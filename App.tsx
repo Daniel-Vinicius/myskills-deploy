@@ -7,14 +7,11 @@ import * as Sentry from '@sentry/react-native';
 
 import { Home } from "./src/pages/Home";
 
-const NODE_ENV = process.env['NODE_ENV'];
-const SENTRY_DSN = process.env['SENTRY_DSN'];
+const { SENTRY_DSN } = process.env;
 
-if (NODE_ENV !== 'development') {
-  Sentry.init({
-    dsn: SENTRY_DSN,
-  });
-}
+Sentry.init({
+  dsn: SENTRY_DSN,
+});
 
 function App() {
   useEffect(() => {
